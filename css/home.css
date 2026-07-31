@@ -75,7 +75,6 @@ select {
   background: var(--nav-deep);
   border-bottom: 0;
   box-shadow: 0 0 0 100vmax var(--nav-deep);
-  clip-path: inset(0 -100vmax);
 }
 
 .brand {
@@ -891,7 +890,7 @@ h2 {
 
 .site-nav .family-links a {
   padding: 2px 0;
-  color: var(--muted);
+  color: var(--ink);
   border: 0;
   font-size: 0.8rem;
   font-weight: 680;
@@ -902,7 +901,7 @@ h2 {
 .site-nav .family-links a:hover,
 .site-nav .family-links a:focus-visible,
 .site-nav .family-links a[aria-current='page'] {
-  color: var(--ink);
+  color: var(--accent-dark);
   border: 0;
   text-decoration: underline;
   text-underline-offset: 4px;
