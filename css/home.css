@@ -72,9 +72,8 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background: var(--nav-deep);
+  background: transparent;
   border-bottom: 0;
-  box-shadow: 0 0 0 100vmax var(--nav-deep);
 }
 
 .brand {
@@ -753,7 +752,17 @@ h2 {
 
 .site-header {
   position: relative;
+  isolation: isolate;
   z-index: 20;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  inset: 0 50%;
+  margin-inline: -50vw;
+  background: var(--nav-deep);
+  z-index: -1;
 }
 
 .brand {
